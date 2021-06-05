@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <h1>Tienda de productos Outdoor</h1>
       <p>Curso React JS en CoderHouse</p>
+      <p>camada</p>
       <p>Por Francisco Xifra</p>
     </div>
   );
