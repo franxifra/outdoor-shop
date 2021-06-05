@@ -1,5 +1,5 @@
 # Tienda productos Outdoor  
 
-## Por Francisco Xifra
+### Por Francisco Xifra
 
-### Para Curso React JS CoderHouse
+Para Curso React JS CoderHouse
