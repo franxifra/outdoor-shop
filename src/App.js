@@ -11,9 +11,12 @@ import Greetings from "./Greetings/Greetings";
 function App() {
   
   return (
+    <div>
+    <Navbar />
     <div className="App">
-      <Navbar />
+     
       <Greetings />
+    </div>
     </div>
   );
 }

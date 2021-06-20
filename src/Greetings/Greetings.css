@@ -3,8 +3,37 @@
   }
 
   .ListaProductosContainer {
-    display: grid;
-    grid: auto / repeat(4, 1fr);
-    grid-gap: 40px 20px;
-    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    }
+
+
+  .producto-container {
+    width: 25%;
+
+
+  }
+  @media(max-width: 1333px) {
+    .producto-container {
+      width: 33.33%;
+    }
+  }
+  @media(max-width: 1073px) {
+     .producto-container {
+      width: 33.33%;
+
+    }
+  }
+  @media(max-width: 815px) {
+    .producto-container {
+      width: 50%;
+    }
+  }
+  @media(max-width: 655px) {
+    .producto-container {
+      width: 100%;
+      
+    }
   }
