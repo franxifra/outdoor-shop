@@ -6,7 +6,7 @@ import CartWidget from "../CartWidget/CartWidget";
 
 const Navbar = () => {
   return (
-    <nav className="MainNav">
+    <nav className="main-nav">
     <Menu color="red">
         <Menu.Item>
           <a href=""><h2>Outdoor Shop</h2></a>
