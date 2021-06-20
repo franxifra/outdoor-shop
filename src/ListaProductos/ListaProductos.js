@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Greetings.css";
+import "./ListaProductos.css";
 import ItemCount from "../components/ItemCount/ItemCount";
 import AddToCart from "../components/AddToCart/AddToCart";
 import { Image } from "cloudinary-react";
@@ -7,7 +7,7 @@ import { Image } from "cloudinary-react";
 import placeholder from "../assets/placeholder.png"
 import axios from "axios";
 
-const Greetings = () => {
+const ListaProductos = () => {
   const [productos, setProductos] = useState([]);
   const [error, setError] = useState("")
 
@@ -15,7 +15,7 @@ const Greetings = () => {
     const productosResponse = async () => {
       try {
         const res = await axios(
-        "https://run.mocky.io/v3/6373ab7b-59ce-4d0e-8b6f-c0d56995901d"
+        "https://run.mocky.io/v3/03189f29-aa38-4156-91e1-489bd64f6f93"
       );
       return setProductos(res.data.productos);
       } catch (error) {
@@ -52,4 +52,4 @@ const Greetings = () => {
   return <div className="ListaProductosContainer">{error !== "" ? <div>Error de conexion (controla tu conexion a internet)</div> : ""} {productosData}</div>;
 };
 
-export default Greetings;
+export default ListaProductos;
