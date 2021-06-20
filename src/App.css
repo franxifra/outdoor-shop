@@ -1,13 +1,6 @@
-.mainNav a {
-  text-decoration: none;
-  color: #333;
-}
 
-.saludos {
-  text-align: center;
-}
-.app {
-  height: 100vh;
+.App {
+  min-height: 100vh;
   width: 100%;
   background-color: rgb(255, 242, 221);
 }

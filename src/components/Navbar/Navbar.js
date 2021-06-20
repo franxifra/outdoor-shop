@@ -1,10 +1,12 @@
 import React from "react";
-import { Menu } from 'semantic-ui-react'
-import CartWidget from "./CartWidget.js"
+import "./Navbar.css"
+import { Menu } from 'semantic-ui-react';
+import CartWidget from "../CartWidget/CartWidget";
+ 
 
 const Navbar = () => {
   return (
-    <nav className="mainNav">
+    <nav className="MainNav">
     <Menu color="red">
         <Menu.Item>
           <a href=""><h2>Outdoor Shop</h2></a>
