@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./ListaProductos.css";
-import ItemCount from "../components/ItemCount/ItemCount";
-import AddToCart from "../components/AddToCart/AddToCart";
+import ItemCount from "../ItemCount/ItemCount";
+import AddToCart from "../AddToCart/AddToCart";
 import { Image } from "cloudinary-react";
 
-import placeholder from "../assets/placeholder.png"
+import placeholder from "../../assets/placeholder.png"
 import axios from "axios";
 
 const ListaProductos = () => {
