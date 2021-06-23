@@ -1,30 +1,30 @@
-import React, { useEffect, useState } from "react";
-import "./ListaProductos.css";
-import ItemCount from "../ItemCount/ItemCount";
-import AddToCart from "../AddToCart/AddToCart";
-import { Image } from "cloudinary-react";
+import React, { useEffect, useState } from "react"
+import "./ListaProductos.css"
+import ItemCount from "../ItemCount/ItemCount"
+import AddToCart from "../AddToCart/AddToCart"
+import { Image } from "cloudinary-react"
 
-import placeholder from "../../assets/placeholder.png";
-import axios from "axios";
+import placeholder from "../../assets/placeholder.png"
+import axios from "axios"
 
 const ListaProductos = () => {
-  const [productos, setProductos] = useState([]);
-  const [error, setError] = useState("");
+  const [productos, setProductos] = useState([])
+  const [error, setError] = useState("")
 
   useEffect(() => {
     const productosResponse = async () => {
       try {
         const res = await axios(
           "https://run.mocky.io/v3/03189f29-aa38-4156-91e1-489bd64f6f93"
-        );
-        return setProductos(res.data.productos);
+        )
+        return setProductos(res.data.productos)
       } catch (error) {
-        return setError(error);
+        return setError(error)
       }
-    };
+    }
 
-    return productosResponse();
-  }, []);
+    return productosResponse()
+  }, [])
 
   const productosData = productos.map((data) => {
     return (
@@ -46,8 +46,8 @@ const ListaProductos = () => {
         <ItemCount stock={data.stock} />
         <AddToCart />
       </div>
-    );
-  });
+    )
+  })
   return (
     <div className="lista-productos-container">
       {error !== "" ? (
@@ -56,7 +56,7 @@ const ListaProductos = () => {
         productosData
       )}
     </div>
-  );
-};
+  )
+}
 
-export default ListaProductos;
+export default ListaProductos
