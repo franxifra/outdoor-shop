@@ -2,7 +2,7 @@ import React from "react"
 import "./App.css"
 import "semantic-ui-css/semantic.min.css"
 import Navbar from "./components/Navbar/Navbar"
-import Greetings from "./components/ListaProductos/ListaProductos"
+import ItemListContainer from "./components/ListaProductos/ItemListContainer"
 
 
 
@@ -15,7 +15,7 @@ function App() {
     <Navbar />
     <div className="app">
      
-      <Greetings />
+      <ItemListContainer />
     </div>
     </div>
   )
