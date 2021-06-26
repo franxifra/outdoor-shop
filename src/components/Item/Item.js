@@ -6,7 +6,7 @@ import './Item.css'
 
 const Item = ({data}) => {
     return (
-        <div key={data.id} className='producto-container'>
+        <div className='producto-container'>
         <Image
           cloudName='xifra-estudio-digital'
           publicId={data.imagen}
