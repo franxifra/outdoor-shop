@@ -1,9 +1,12 @@
 import React from "react";
-import "./App.css";
-import "semantic-ui-css/semantic.min.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-//components
+// css
+import "semantic-ui-css/semantic.min.css";
+import "./App.css";
+
+
+// components
 import Navbar from "./components/Navbar/Navbar";
 import Cart from "./views/Cart";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";

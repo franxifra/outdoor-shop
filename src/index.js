@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+// css
 import './index.css';
 
+// components
 import App from './App';
 
 ReactDOM.render(

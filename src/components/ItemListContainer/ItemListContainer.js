@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
+
+// css
 import "./ItemListContainer.css";
-import ItemList from "../ItemList/ItemList.js";
+
+// API base URL
 import MockyIo from "../../api/MockyIo";
 
-import axios from "axios";
+// components
+import ItemList from "../ItemList/ItemList.js";
 import Error from "../Error/Error";
 
 const ItemListContainer = ({ match }) => {

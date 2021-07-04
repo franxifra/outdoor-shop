@@ -1,8 +1,11 @@
 import React from "react";
-import Item from "../Item/Item";
+import { Link } from "react-router-dom";
+
+// css
 import "./ItemList.css";
 
-import { Link } from "react-router-dom";
+// components
+import Item from "../Item/Item";
 import Loading from "../Loading/Loading";
 
 const ItemList = ({ productos, categoria }) => {

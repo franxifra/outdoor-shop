@@ -1,6 +1,9 @@
 import React from "react"
-import './Error.css'
 import { AiOutlineDisconnect } from "react-icons/ai"
+
+
+// css
+import './Error.css'
 
 
 const Error = () => {

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Image } from 'cloudinary-react'
+
+// css
 import './Item.css'
 
 //components

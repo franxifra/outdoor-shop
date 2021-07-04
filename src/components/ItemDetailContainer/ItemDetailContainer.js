@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import ItemDetail from "../ItemDetail/ItemDetail";
+
+// API base URL
 import MockyIo from "../../api/MockyIo";
+
+// components
+import ItemDetail from "../ItemDetail/ItemDetail";
 import Error from "../Error/Error";
 
 const ItemDetailContainer = ({ match }) => {

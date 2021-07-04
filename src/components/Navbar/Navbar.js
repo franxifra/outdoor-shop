@@ -1,7 +1,11 @@
 import React from "react";
-import "./Navbar.css";
-import Logo from "../../assets/logo.svg";
 import { NavLink } from "react-router-dom";
+
+// css
+import "./Navbar.css";
+
+// assets
+import Logo from "../../assets/logo.svg";
 
 //components
 import CartWidget from "../CartWidget/CartWidget";

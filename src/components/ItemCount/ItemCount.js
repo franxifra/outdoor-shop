@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
-import "./ItemCount.css"
 import { Input } from "semantic-ui-react"
+
+// css
+import "./ItemCount.css"
 
 
 

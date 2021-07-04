@@ -1,10 +1,10 @@
 import React from "react";
 import { Image } from "cloudinary-react";
 
-//css
+// css
 import "./ItemDetail.css";
 
-//components
+// components
 import ItemCount from "../ItemCount/ItemCount";
 import AddToCart from "../AddToCart/AddToCart";
 import Loading from "../Loading/Loading";
