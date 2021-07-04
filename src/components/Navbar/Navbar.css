@@ -105,8 +105,7 @@
   transition: opacity 300ms, transform 300ms;
 }
 
-.menu a:hover::after,
-.menu a:focus::after {
+.menu a:hover::after {
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
 }
@@ -120,7 +119,19 @@
   transform-origin: center;
 }
 
-.menu li a:hover::after,
-.menu li a:focus::after {
+.menu li a:hover::after {
   transform: scale(1);
+}
+
+.menu li a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.15em;
+  background-color: rgb(218, 116, 21);
+  opacity: 1;
+  margin-top: 2px;
+  transform: scale(.5);
 }
