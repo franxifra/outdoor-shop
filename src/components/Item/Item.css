@@ -1,28 +1,16 @@
-.producto-container {
-  width: 25%;
-  margin-bottom: 30px;
+.item-container {
+  animation: createBox .1s;
+}
 
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 
-}
-@media(max-width: 1333px) {
-  .producto-container {
-    width: 33.33%;
-  }
-}
-@media(max-width: 1073px) {
-   .producto-container {
-    width: 33.33%;
-
-  }
-}
-@media(max-width: 815px) {
-  .producto-container {
-    width: 50%;
-  }
-}
-@media(max-width: 655px) {
-  .producto-container {
-    width: 100%;
-    
-  }
+.item-container:hover {
+  transform: scale(1.03);
 }

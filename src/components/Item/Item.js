@@ -12,7 +12,7 @@ import AddToCart from '../AddToCart/AddToCart'
 const Item = ({data}) => {
     return (
       
-        <div>
+        <div className="item-container">
         <Image
           cloudName='xifra-estudio-digital'
           publicId={data.imagen}

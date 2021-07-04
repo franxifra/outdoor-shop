@@ -15,7 +15,8 @@ const Error = () => {
       
         <AiOutlineDisconnect size={120} />
       
-      <h4>Error de conexion (controla tu conexion a internet)</h4>
+      <h4>Error de conexion</h4>
+      <h5>Controla tu conexion a internet</h5>
       <a href="" onClick={refreshPage}>Probar de nuevo</a>
     </div>
   );

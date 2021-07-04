@@ -34,13 +34,13 @@ const ItemDetailContainer = ({ match }) => {
 
   return (
    
-    <div>
+    <React.Fragment>
        {error !== "" ? (
       <Error/>
     ) : (
       <ItemDetail data={selectedItem} />
     )}
-    </div>
+    </React.Fragment>
   );
 };
 
