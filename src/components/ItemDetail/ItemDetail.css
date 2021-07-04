@@ -1,0 +1,41 @@
+.product-container {
+    display: flex;
+    flex-direction: row;
+    margin:0 auto;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;    
+}
+
+@media(max-width: 615px) {
+    .product-container {
+      display: block;
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+.image-detail {
+    flex:3
+}
+
+.image-detail img {
+    max-width: 90%;
+}
+
+.item-detail {
+    flex:2
+}
+
+.title {
+    font-size: 3em;
+}
+
+.price {
+    font-size: 2em;
+}
+
+.description {
+    font-size: 1.5em;
+}

@@ -1,0 +1,29 @@
+.producto-container {
+    width: 25%;
+    margin-bottom: 30px;
+    color: #222
+  
+  
+  }
+  @media(max-width: 1333px) {
+    .producto-container {
+      width: 33.33%;
+    }
+  }
+  @media(max-width: 1073px) {
+     .producto-container {
+      width: 33.33%;
+  
+    }
+  }
+  @media(max-width: 930px) {
+    .producto-container {
+      width: 50%;
+    }
+  }
+  @media(max-width: 655px) {
+    .producto-container {
+      width: 100%;
+      
+    }
+  }

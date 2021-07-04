@@ -1,12 +1,16 @@
 import React from 'react'
-import ItemCount from '../ItemCount/ItemCount'
-import AddToCart from '../AddToCart/AddToCart'
 import { Image } from 'cloudinary-react'
 import './Item.css'
 
+//components
+import ItemCount from '../ItemCount/ItemCount'
+import AddToCart from '../AddToCart/AddToCart'
+
+
 const Item = ({data}) => {
     return (
-        <div className='producto-container'>
+      
+        <div>
         <Image
           cloudName='xifra-estudio-digital'
           publicId={data.imagen}
@@ -22,6 +26,7 @@ const Item = ({data}) => {
         <ItemCount stock={data.stock} />
         <AddToCart />
       </div>
+   
     )
 }
 
