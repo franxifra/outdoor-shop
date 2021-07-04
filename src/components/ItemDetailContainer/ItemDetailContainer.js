@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import MockyIo from "../../api/MockyIo";
+import Error from "../Error/Error";
 
 const ItemDetailContainer = ({ match }) => {
   const [selectedItem, setSelectedItem] = useState({});
@@ -28,8 +29,13 @@ const ItemDetailContainer = ({ match }) => {
   }, []);
 
   return (
+   
     <div>
+       {error !== "" ? (
+      <Error/>
+    ) : (
       <ItemDetail data={selectedItem} />
+    )}
     </div>
   );
 };
