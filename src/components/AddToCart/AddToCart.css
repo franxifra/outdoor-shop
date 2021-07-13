@@ -1,0 +1,14 @@
+.add-cart {
+    padding: 20px;
+    border: 1px solid #222;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    transition: all .2s;
+}
+.add-cart:hover {
+    
+    background-color: #222;
+    color:white;
+}

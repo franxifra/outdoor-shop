@@ -1,5 +1,5 @@
 .item-container {
-  animation: createBox .1s;
+  animation: createBox .15s;
 }
 
 @keyframes createBox {

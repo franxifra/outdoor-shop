@@ -4,11 +4,6 @@ import { Image } from 'cloudinary-react'
 // css
 import './Item.css'
 
-//components
-import ItemCount from '../ItemCount/ItemCount'
-import AddToCart from '../AddToCart/AddToCart'
-
-
 const Item = ({data}) => {
     return (
       
@@ -24,9 +19,6 @@ const Item = ({data}) => {
         <h3>{data.name}</h3>
         <p>$ {data.precio}</p>
         <p>{data.descripcion}</p>
-        <p>Stock Disponible: {data.stock}</p>
-        <ItemCount stock={data.stock} />
-        <AddToCart />
       </div>
    
     )

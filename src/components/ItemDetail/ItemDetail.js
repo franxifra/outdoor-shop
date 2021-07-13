@@ -6,14 +6,18 @@ import "./ItemDetail.css";
 
 // components
 import ItemCount from "../ItemCount/ItemCount";
-import AddToCart from "../AddToCart/AddToCart";
 import Loading from "../Loading/Loading";
+import { useCartContext } from "../../context/CartContext";
 
 const ItemDetail = ({ data }) => {
+  const { addToCart } = useCartContext();
+
+
+  const onAdd = (qty) => addToCart(data, qty);
   return (
     <div className="product-container">
       {!data.name ? (
-       <Loading/>
+        <Loading />
       ) : (
         <React.Fragment>
           <div className="image-detail">
@@ -28,8 +32,7 @@ const ItemDetail = ({ data }) => {
             <p className="price">$ {data.precio}</p>
             <p className="description">{data.descripcion}</p>
             <p className="stock">Stock Disponible: {data.stock}</p>
-            <ItemCount stock={data.stock} />
-            <AddToCart />
+          { data.stock > 0 && <ItemCount stock={data.stock} id={data.id} onAdd={onAdd} /> }
           </div>
         </React.Fragment>
       )}
