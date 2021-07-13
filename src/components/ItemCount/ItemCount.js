@@ -30,9 +30,7 @@ const ItemCount = ({ stock, id, onAdd }) => {
       </div>
       {!productInCart ? (
         <button
-          onClick={() => {
-            return onAdd(cantidad), setProductInCart(true);
-          }}
+          onClick={() => {onAdd(cantidad); setProductInCart(true)}}
         >
           Añadir al carrito
         </button>

@@ -3,7 +3,7 @@ import { Redirect } from "react-router-dom";
 import { useCartContext } from "../../context/CartContext";
 
 const Cart = () => {
-  const { cart, clearCart } = useCartContext();
+  const { cart } = useCartContext();
 
   if (!cart.length) {
     return <Redirect to="/" />;
